@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>СV - Абаев Максим</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    @media screen {
+      body {
+        background: url("./assets/dancing-bricks.png");
+      }
+
+      main {
+        border-radius: 5px;
+        -webkit-box-shadow: 0 10px 100px -15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 100px -15px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-kerning: none;
+    }
+
+    h1,
+    hr {
+      margin: 0 25px;
+    }
+
+    h1 small {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 25px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    li {
+      padding: 5px;
+    }
+
+    li strong {
+      font-style: normal;
+    }
+
+    ol>li {
+      position: relative;
+    }
+
+    main {
+      margin: 0 auto;
+      min-width: 270px;
+      max-width: 800px;
+
+      background: white;
+
+      padding: 25px;
+    }
+
+    img {
+      width: 225px;
+      max-width: 100%;
+
+      position: absolute;
+      z-index: 2;
+    }
+
+    span,
+    a {
+      font-weight: bolder;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .bio {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      margin: 25px;
+    }
+
+    .image-container {
+      min-width: 225px;
+      height: 300px;
+      position: relative;
+
+      margin-right: 25px;
+    }
+
+    .image-container::after {
+      content: "";
+      display: block;
+      width: 225px;
+      height: 300px;
+
+      background-color: lightgray;
+
+      opacity: 0.5;
+
+      position: absolute;
+      z-index: 1;
+
+      -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    .description {
+      font-style: italic;
+      font-size: 14px;
+
+      list-style-type: "-";
+
+      margin: 0;
+    }
+
+    .description>li {
+      padding: 0;
+      padding-left: 3px;
+    }
+
+    .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden {
+      position: absolute;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+
+      white-space: nowrap;
+
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 425px) {
+      main {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+
+      .bio {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>
+      Абаев Максим Леонидович
+      <br /><small>frontend developer</small>
+    </h1>
+
+    <hr />
+    <section class="bio">
+      <h2 class="visually-hidden">Немного обо мне</h2>
+      <div class="image-container">
+        <img class="image" width="225" height="300" src="./assets/photo.jpg" alt="аватар" />
+      </div>
+      <div>
+        <p class="contacts">
+          <span>Контакты:</span>
+          <br />
+          E-mail:
+          <a href="mailto:legionaire13@mail.ru">legionaire13@mail.ru</a>
+          <br />
+          Facebook:
+          <a href="https://www.facebook.com/abaevmax/"
+          target="_blank">https://www.facebook.com/abaevmax/</a>
+        </p>
+        <p class="skills">
+          <span>Skills:</span>
+          <br />JS (ES5,ES6+), React, HTML + CSS, отзывчивая/адаптивная
+          кроссбраузерная верстка по методологии БЭМ, git, препроцессоры
+          SASS/LESS, автоматизация сборки проекта
+        </p>
+      </div>
+    </section>
+    <h2 class="github">Примеры моего кода на github:</h2>
+    <ul class="github__list">
+      <li>
+        <a href="https://legionaire13-test-aviasales.web.app/" target="_blank">
+          aviasales-test</a>
+        <small>
+          |
+          <a href="https://github.com/Legionaire13/my-test-aviasales" target="_blank">код на github</a>
+        </small>
+        <br />
+        <ul class="description">
+          <strong>Тестовый проект на React на позицию junior frontend
+            разработчика</strong>
+          <br />
+          Задача:
+          <li>
+            сбор билетов с тестового сервера в соответствии с условиями
+            пользователя
+          </li>
+          <li>
+            фильтрация по критериям, сортировка
+          </li>
+          <li>рендер первых пяти подходящих</li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://legionaire13.github.io/mockup-cat-energy/" target="_blank">cat-energy</a>
+        <small>
+          |
+          <a href="https://github.com/Legionaire13/mockup-cat-en" target="_blank">код на github</a>
+        </small>
+        <br />
+        <ul class="description">
+          <strong>Макет</strong>
+          <li>
+            Cверстан по БЭМ с использованием SCSS, PostHTML, автоматизация на
+            gulp
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://legionaire13.github.io/fend-project-memory-game/" target="_blank">memory game</a>
+        <small>
+          |
+          <a href="https://github.com/Legionaire13/fend-project-memory-game" target="_blank">код на github</a>
+        </small>
+        <br />
+        <ul class="description">
+          <strong>Первый проект на JS</strong>
+          Задача:
+          <li>
+            для готового макета необходимо было дописать логику работы с DOM
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
