@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>СV - Абаев Максим</title>
+  <title>Projects Guide - Абаев Максим</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://necolas.github.io/normalize.css/latest/normalize.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
@@ -72,14 +72,6 @@
       padding: 25px;
     }
 
-    img {
-      width: 225px;
-      max-width: 100%;
-
-      position: absolute;
-      z-index: 2;
-    }
-
     span,
     a {
       font-weight: bolder;
@@ -90,37 +82,8 @@
     }
 
     .bio {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-
       margin: 25px;
-    }
-
-    .image-container {
-      min-width: 225px;
-      height: 300px;
-      position: relative;
-
-      margin-right: 25px;
-    }
-
-    .image-container::after {
-      content: "";
-      display: block;
-      width: 225px;
-      height: 300px;
-
-      background-color: lightgray;
-
-      opacity: 0.5;
-
-      position: absolute;
-      z-index: 1;
-
-      -webkit-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
+      margin-bottom: 50px;
     }
 
     .description {
@@ -171,16 +134,14 @@
 <body>
   <main>
     <h1>
-      Абаев Максим Леонидович
+      Максим Абаев
       <br /><small>frontend developer</small>
     </h1>
 
     <hr />
     <section class="bio">
       <h2 class="visually-hidden">Немного обо мне</h2>
-      <div class="image-container">
-        <img class="image" width="225" height="300" src="./assets/photo.jpg" alt="аватар" />
-      </div>
+      <div class="image-container"></div>
       <div>
         <p class="contacts">
           <span>Контакты:</span>
@@ -189,14 +150,13 @@
           <a href="mailto:legionaire13@mail.ru">legionaire13@mail.ru</a>
           <br />
           Facebook:
-          <a href="https://www.facebook.com/abaevmax/"
-          target="_blank">https://www.facebook.com/abaevmax/</a>
+          <a href="https://www.facebook.com/abaevmax/" target="_blank">https://www.facebook.com/abaevmax/</a>
         </p>
         <p class="skills">
           <span>Skills:</span>
-          <br />JS (ES5,ES6+), React, HTML + CSS, отзывчивая/адаптивная
-          кроссбраузерная верстка по методологии БЭМ, git, препроцессоры
-          SASS/LESS, автоматизация сборки проекта
+          <br />HTML, CSS, JS (ES5,ES6+), React, отзывчивая/адаптивная
+          кроссбраузерная верстка по методологии БЭМ, препроцессоры
+          SASS/LESS, автоматизация сборки проектов на gulp, webpack, контроль версий git
         </p>
       </div>
     </section>
@@ -222,7 +182,7 @@
           <li>
             фильтрация по критериям, сортировка
           </li>
-          <li>рендер первых пяти подходящих</li>
+          <li>отрисовка первых пяти подходящих билетов</li>
         </ul>
       </li>
       <li>
@@ -249,6 +209,7 @@
         <br />
         <ul class="description">
           <strong>Первый проект на JS</strong>
+          <br />
           Задача:
           <li>
             для готового макета необходимо было дописать логику работы с DOM

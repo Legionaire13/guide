@@ -1,1 +1,1 @@
-[CV](https://legionaire13.github.io/cv/)
+[Projects Guide](https://legionaire13.github.io/projects-guide/)
