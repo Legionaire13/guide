@@ -1,1 +1,1 @@
-[Projects Guide](https://legionaire13.github.io/projects-guide/)
+[Home Projects](https://legionaire13.github.io/projects-guide/)
