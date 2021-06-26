@@ -1,223 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home projects - Абаев Максим</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --main-color: white;
+        --main-bg: black;
+        --secondary-color: black;
+        --secondary-bg: lightyellow;
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Projects Guide - Абаев Максим</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://necolas.github.io/normalize.css/latest/normalize.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    @media screen {
+        --gradient-ratio: 20px;
+        --main-margin-top: 30px;
+      }
+
       body {
-        background: url("./assets/dancing-bricks.png");
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+          Cantarell, "Open Sans", sans-serif;
+        font-size: 16px;
+        font-kerning: none;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--secondary-color);
+      }
+
+      h1,
+      hr {
+        margin: 20px 25px;
+      }
+
+      h2 {
+        background-color: var(--main-bg);
+        color: var(--main-color);
+
+        font-size: 20px;
+
+        margin: 25px;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      h2 svg {
+        margin-right: 10px;
+        margin-left: -5px;
+
+        fill: var(--main-color);
+      }
+
+      h3 {
+        display: inline;
+
+        font-size: 16px;
+      }
+
+      li {
+        padding: 5px;
+      }
+
+      a {
+        outline-color: blue;
       }
 
       main {
-        border-radius: 5px;
-        -webkit-box-shadow: 0 10px 100px -15px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 10px 100px -15px rgba(0, 0, 0, 0.3);
+        padding: 25px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        min-width: 270px;
+        max-width: 650px;
+
+        background-color: #fff;
       }
-    }
 
-    body {
-      font-family: "Open Sans", sans-serif;
-      font-size: 16px;
-      font-kerning: none;
-    }
+      .list {
+        list-style-type: none;
 
-    h1,
-    hr {
-      margin: 0 25px;
-    }
-
-    h1 small {
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin: 25px;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: none;
-
-      padding: 0;
-      margin-left: 20px;
-    }
-
-    li {
-      padding: 5px;
-    }
-
-    li strong {
-      font-style: normal;
-    }
-
-    ol>li {
-      position: relative;
-    }
-
-    main {
-      margin: 0 auto;
-      min-width: 270px;
-      max-width: 800px;
-
-      background: white;
-
-      padding: 25px;
-    }
-
-    span,
-    a {
-      font-weight: bolder;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-
-    .bio {
-      margin: 25px;
-      margin-bottom: 50px;
-    }
-
-    .description {
-      font-style: italic;
-      font-size: 14px;
-
-      list-style-type: "-";
-
-      margin: 0;
-    }
-
-    .description>li {
-      padding: 0;
-      padding-left: 3px;
-    }
-
-    .visually-hidden:not(:focus):not(:active),
-    input[type="checkbox"].visually-hidden,
-    input[type="radio"].visually-hidden {
-      position: absolute;
-
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-
-      white-space: nowrap;
-
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-
-    @media screen and (max-width: 425px) {
-      main {
-        padding: 10px;
-        font-size: 0.9em;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       .bio {
+        min-height: 170px;
+
         flex-direction: column;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <main>
-    <h1>
-      Максим Абаев
-      <br /><small>frontend developer</small>
-    </h1>
+      .headline__pagename {
+        display: block;
+        padding: 5px 15px;
 
-    <hr />
-    <section class="bio">
-      <h2 class="visually-hidden">Немного обо мне</h2>
-      <div class="image-container"></div>
-      <div>
-        <p class="contacts">
-          <span>Контакты:</span>
-          <br />
-          E-mail:
-          <a href="mailto:legionaire13@mail.ru">legionaire13@mail.ru</a>
-          <br />
-          Facebook:
-          <a href="https://www.facebook.com/abaevmax/" target="_blank">https://www.facebook.com/abaevmax/</a>
-        </p>
-        <p class="skills">
-          <span>Skills:</span>
-          <br />HTML, CSS, JS (ES5,ES6+), React, отзывчивая/адаптивная
-          кроссбраузерная верстка по методологии БЭМ, препроцессоры
-          SASS/LESS, автоматизация сборки проектов на gulp, webpack, контроль версий git
-        </p>
-      </div>
-    </section>
-    <h2 class="github">Примеры моего кода на github:</h2>
-    <ul class="github__list">
-      <li>
-        <a href="https://legionaire13-test-aviasales.web.app/" target="_blank">
-          aviasales-test</a>
-        <small>
-          |
-          <a href="https://github.com/Legionaire13/my-test-aviasales" target="_blank">код на github</a>
-        </small>
-        <br />
-        <ul class="description">
-          <strong>Тестовый проект на React на позицию junior frontend
-            разработчика</strong>
-          <br />
-          Задача:
-          <li>
-            сбор билетов с тестового сервера в соответствии с условиями
-            пользователя
-          </li>
-          <li>
-            фильтрация по критериям, сортировка
-          </li>
-          <li>отрисовка первых пяти подходящих билетов</li>
-        </ul>
-      </li>
-      <li>
-        <a href="https://legionaire13.github.io/mockup-cat-energy/" target="_blank">cat-energy</a>
-        <small>
-          |
-          <a href="https://github.com/Legionaire13/mockup-cat-en" target="_blank">код на github</a>
-        </small>
-        <br />
-        <ul class="description">
-          <strong>Макет</strong>
-          <li>
-            Cверстан по БЭМ с использованием SCSS, PostHTML, автоматизация на
-            gulp
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="https://legionaire13.github.io/fend-project-memory-game/" target="_blank">memory game</a>
-        <small>
-          |
-          <a href="https://github.com/Legionaire13/fend-project-memory-game" target="_blank">код на github</a>
-        </small>
-        <br />
-        <ul class="description">
-          <strong>Первый проект на JS</strong>
-          <br />
-          Задача:
-          <li>
-            для готового макета необходимо было дописать логику работы с DOM
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </main>
-</body>
+        font-size: 24px;
 
+        background-color: var(--main-bg);
+        color: var(--main-color);
+      }
+
+      .headline__pos {
+        font-size: 20px;
+
+        display: block;
+
+        background-color: var(--secondary-bg);
+        color: var(--secondary-color);
+
+        margin: 0;
+        padding: 5px 15px;
+      }
+
+      .skills__list {
+        margin-top: 5px;
+
+        list-style-type: circle;
+      }
+
+      .skills__item {
+        padding: 0;
+      }
+
+      .projects {
+        margin: 0 -25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+
+        background-color: var(--secondary-bg);
+        background-image: linear-gradient(
+          to bottom,
+          var(--main-color) 0,
+          var(--main-color) var(--gradient-ratio),
+          var(--secondary-bg) var(--gradient-ratio),
+          var(--secondary-bg) 100%
+        );
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .projects__headline {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .project__description {
+        margin-top: 10px;
+      }
+
+      .visually-hidden:not(:focus):not(:active),
+      input[type="checkbox"].visually-hidden,
+      input[type="radio"].visually-hidden {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+      @media (hover: hover) {
+        a:hover {
+          text-decoration: none;
+        }
+      }
+
+      @media screen {
+        body {
+          min-height: calc(100vh - var(--main-margin-top));
+
+          background-image: url("./assets/geometry.png");
+        }
+
+        main {
+          border-radius: 10px;
+          box-shadow: 0 20px 100px -15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1,
+        h2 {
+          text-shadow: 0 0 2px var(--main-color);
+        }
+      }
+
+      /* Mob */
+      @media screen and (max-width: 425px) {
+        body {
+          background-image: none;
+          background-color: var(--secondary-bg);
+        }
+
+        main {
+          margin: 0;
+          padding: 5px;
+
+          box-shadow: none;
+        }
+
+        .projects {
+          margin: -5px;
+          padding-left: 0;
+          padding-right: 0;
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+
+      @media screen and (min-resolution: 1.5dppx) {
+        body {
+          background-image: url("./assets/geometry_@2X.png");
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="headline">
+        <span class="headline__pagename">Максим Абаев</span>
+        <span class="headline__pos">junior frontend developer</span>
+      </h1>
+
+      <hr />
+      <section class="bio">
+        <h2 class="visually-hidden">Немного обо мне</h2>
+        <ul class="list">
+          <li class="skills">
+            <h3>Навыки:</h3>
+            <ul class="skills__list list">
+              <li class="skills__item">JS (ES5,ES6+), React</li>
+              <li class="skills__item">HTML, CSS (БЭМ), SASS, LESS</li>
+              <li class="skills__item">
+                автоматизация сборки проектов: gulp, webpack
+              </li>
+              <li class="skills__item">контроль версий git</li>
+              <li class="skills__item">figma, photoshop</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="projects">
+        <h2 class="projects__headline">
+          <svg
+            class="octicon octicon-mark-github v-align-middle"
+            height="25"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="32"
+            aria-hidden="true"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+          Проекты и код на github:
+        </h2>
+        <ul class="list">
+          <li class="project">
+            <a
+              href="https://legionaire13-test-aviasales.netlify.app/"
+              target="_blank"
+            >
+              aviasales-test</a
+            >
+            <small>
+              |
+              <a
+                href="https://github.com/Legionaire13/test-aviasales"
+                target="_blank"
+                >github</a
+              >
+            </small>
+            <br />
+            <p class="project__description">
+              <strong
+                >Тестовое задание на React на позицию junior frontend
+                разработчика</strong
+              >
+              <br />
+              Задача: сбор билетов с тестового сервера, фильтрация и сортировка
+              по критериям в соответствии с условиями пользователя, отрисовка
+              первых пяти подходящих билетов
+            </p>
+          </li>
+          <li class="project">
+            <a
+              href="https://legionaire13.github.io/mockup-cat-energy/"
+              target="_blank"
+              >cat-energy</a
+            >
+            <small>
+              |
+              <a
+                href="https://github.com/Legionaire13/mockup-cat-en"
+                target="_blank"
+                >github</a
+              >
+            </small>
+            <p class="project__description">
+              <strong>Тренировочный макет</strong>
+              <br />
+              Cверстан с использованием SCSS, PostHTML, БЭМ, автоматизация на
+              gulp
+            </p>
+          </li>
+          <li class="project">
+            <a href="https://legionaire13.github.io/wisdom-app/" target="_blank"
+              >wisdom-app</a
+            >
+            <small>
+              |
+              <a
+                href="https://github.com/Legionaire13/wisdom-app-repo"
+                target="_blank"
+                >github</a
+              >
+            </small>
+            <br />
+            <p class="project__description">
+              <strong>Проект на JS</strong> <br />
+              Страница выполненная на HTML, SASS и JS с разделением кода на
+              несколько модулей по модели MVC и внутренней рейтинговой системой
+              выдачи ответов на введенные пользователем вопросы.
+            </p>
+          </li>
+          <li class="project">
+            <a
+              href="https://legionaire13.github.io/fend-project-memory-game/"
+              target="_blank"
+              >memory game</a
+            >
+            <small>
+              |
+              <a
+                href="https://github.com/Legionaire13/fend-project-memory-game"
+                target="_blank"
+                >github</a
+              >
+            </small>
+            <br />
+            <p class="project__description">
+              <strong>Первый проект на JS</strong> <br />
+              Задача: для готового макета необходимо было дописать логику работы
+              с DOM
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
