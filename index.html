@@ -45,21 +45,14 @@
       }
 
       h2 {
-        background-color: var(--main-bg);
-        color: var(--main-color);
-
         font-size: 20px;
-
-        margin: 25px;
-        margin-bottom: 10px;
-        padding: 5px;
       }
 
       h2 svg {
         margin-right: 10px;
-        margin-left: -5px;
+        margin-left: 20px;
 
-        fill: var(--main-color);
+        fill: #000;
       }
 
       h3 {
@@ -104,24 +97,14 @@
 
       .headline__pagename {
         display: block;
-        padding: 5px 15px;
 
         font-size: 24px;
-
-        background-color: var(--main-bg);
-        color: var(--main-color);
       }
 
       .headline__pos {
         font-size: 20px;
 
         display: block;
-
-        background-color: var(--secondary-bg);
-        color: var(--secondary-color);
-
-        margin: 0;
-        padding: 5px 15px;
       }
 
       .skills__list {
@@ -154,9 +137,6 @@
       }
 
       .projects__headline {
-        padding-left: 15px;
-        padding-right: 15px;
-
         display: flex;
         align-items: center;
       }
@@ -196,6 +176,15 @@
           background-image: url("./assets/geometry.png");
         }
 
+        h2 {
+          background-color: var(--main-bg);
+          color: var(--main-color);
+
+          margin: 25px;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+
         main {
           border-radius: 10px;
           box-shadow: 0 20px 100px -15px rgba(0, 0, 0, 0.3);
@@ -204,6 +193,33 @@
         h1,
         h2 {
           text-shadow: 0 0 2px var(--main-color);
+        }
+
+        h2 svg {
+          margin-right: 10px;
+          margin-left: -5px;
+
+          fill: var(--main-color);
+        }
+
+        .headline__pagename {
+          padding: 5px 15px;
+
+          background-color: var(--main-bg);
+          color: var(--main-color);
+        }
+
+        .headline__pos {
+          background-color: var(--secondary-bg);
+          color: var(--secondary-color);
+
+          margin: 0;
+          padding: 5px 15px;
+        }
+
+        .projects__headline {
+          padding-left: 15px;
+          padding-right: 15px;
         }
       }
 
