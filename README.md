@@ -1,2 +1,2 @@
 Страница с домашними проектами
-[Home Projects](https://legionaire13.github.io/projects-guide/)
+[Home Projects](https://legionaire13.github.io/home-projects/)
